@@ -9,10 +9,10 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 20px;
-	/* height: 100%; */
 }
 
 .landingTile {
+	overflow: hidden;
 }
 
 .landingTileImage {
@@ -32,4 +32,52 @@
 	font-size: 32px;
 	font-weight: 100;
 	text-shadow: 3px 2px 2px;
+}
+
+@media only screen and (max-width: 768px) {
+	.landingTilesWrapper {
+		gap: 12px;
+	}
+
+	.landingTileImage {
+		height: 200px;
+	}
+
+	.landingTileTitle {
+		font-size: 24px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.landingTilesWrapper {
+		gap: 10px;
+	}
+
+	.landingTileImage {
+		height: 160px;
+	}
+
+	.landingTileTitle {
+		font-size: 20px;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.landingTilesWrapper {
+		gap: 8px;
+	}
+
+	.landingTileImage {
+		height: 140px;
+	}
+
+	.landingTileTitle {
+		font-size: 16px;
+	}
+}
+
+@media only screen and (max-width: 300px) {
+	.landingTileImage {
+		height: 120px;
+	}
 }

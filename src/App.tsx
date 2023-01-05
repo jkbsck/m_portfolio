@@ -1,4 +1,4 @@
-// import { Home } from "./pages/home/Home";
+import { Home } from "./pages/home/Home";
 // import { Main } from "./pages/main/Main";
 // import { Carousel } from "./pages/Carousel";
 // import { Header } from "./components/header/Header";
@@ -10,7 +10,10 @@ import { Landing } from "./pages/landing/Landing";
 const App = () => {
 	return (
 		<div className="app">
-			<Landing topics={topics} />
+			<Routes>
+				<Route path="/" element={<Landing topics={topics} />} />
+				<Route path="/topic" element={<Home cards={architectureCards} />} />
+			</Routes>
 
 			{/* <Header />
 			<div className="content-wrapper">
