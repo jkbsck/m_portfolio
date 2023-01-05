@@ -1,0 +1,46 @@
+:root {
+	/* sizes */
+	--navbar-height: 100px;
+	--navbar-M-width: 200px;
+	--navbar-S-width: 140px;
+
+	--footer-height: 200px;
+
+	--max-width-L: 1920px;
+	--max-width-M: 1200px;
+	--max-width-S: 768px;
+
+	/* fonts */
+	--h1-L-font-size: 32px;
+	--h2-L-font-size: 28px;
+	--h3-L-font-size: 24px;
+	--h4-L-font-size: 20px;
+	--h5-L-font-size: 16px;
+	--h6-L-font-size: 12px;
+
+	--h1-M-font-size: 28px;
+	--h2-M-font-size: 24px;
+	--h3-M-font-size: 20px;
+	--h4-M-font-size: 16px;
+	--h5-M-font-size: 14px;
+	--h6-M-font-size: 12px;
+
+	--h1-S-font-size: 24px;
+	--h2-S-font-size: 20px;
+	--h3-S-font-size: 16px;
+	--h4-S-font-size: 14px;
+	--h5-S-font-size: 12px;
+	--h6-S-font-size: 10px;
+
+	--p-L-font-size: 14px;
+	--p-M-font-size: 12px;
+	--p-S-font-size: 10px;
+
+	/* colors */
+	--black-jet: #373737;
+	--lemon-meringue: #f1e8b8;
+	--quick-silver: #9fa4a9;
+	--light-stargate: #c7d3dd;
+	--platinum: #e5e5e5;
+	--red-ryb: #f72c25;
+}

@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import { Home } from "./pages/home/Home";
+// import { Main } from "./pages/main/Main";
+// import { Carousel } from "./pages/Carousel";
+// import { Header } from "./components/header/Header";
+// import { Footer } from "./components/footer/Footer";
+import { articles, architectureCards, topics } from "./data";
+import { Routes, Route } from "react-router-dom";
+import { Landing } from "./pages/landing/Landing";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+	return (
+		<div className="app">
+			<Landing topics={topics} />
+
+			{/* <Header />
+			<div className="content-wrapper">
+				<Routes>
+					<Route path="/" element={<Home cards={architectureCards} />} />
+					<Route path="/main" element={<Main articles={articles} />} />
+					<Route path="/carousel" element={<Carousel articles={articles} />} />
+				</Routes>
+			</div>
+			<Footer /> */}
+		</div>
+	);
+};
 
 export default App;

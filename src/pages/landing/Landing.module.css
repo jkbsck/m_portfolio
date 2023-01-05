@@ -1,0 +1,35 @@
+.landingWrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.landingTilesWrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+	/* height: 100%; */
+}
+
+.landingTile {
+}
+
+.landingTileImage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 280px;
+	max-height: 40vh;
+	border-radius: 3px;
+	border: solid 1px var(--black-jet);
+	box-shadow: var(--black-jet) 1px 1px 5px;
+	cursor: pointer;
+}
+
+.landingTileTitle {
+	color: var(--black-jet);
+	font-size: 32px;
+	font-weight: 100;
+	text-shadow: 3px 2px 2px;
+}
