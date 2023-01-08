@@ -1,9 +1,14 @@
-import { Home } from "./pages/home/Home";
-// import { Main } from "./pages/main/Main";
-// import { Carousel } from "./pages/Carousel";
-// import { Header } from "./components/header/Header";
-// import { Footer } from "./components/footer/Footer";
-import { articles, architectureCards, topics } from "./data";
+import { Analog } from "./pages/analog/Analog";
+import { Architecture } from "./pages/architecture/Architecture";
+import { Fragments } from "./pages/fragments/Fragments";
+import { People } from "./pages/people/People";
+import {
+	analogCards,
+	architectureCards,
+	peopleCards,
+	fragmentsCards,
+	topics,
+} from "./data";
 import { Routes, Route } from "react-router-dom";
 import { Landing } from "./pages/landing/Landing";
 
@@ -12,18 +17,17 @@ const App = () => {
 		<div className="app">
 			<Routes>
 				<Route path="/" element={<Landing topics={topics} />} />
-				<Route path="/topic" element={<Home cards={architectureCards} />} />
+				<Route path="/analog" element={<Analog cards={analogCards} />} />
+				<Route
+					path="/architecture"
+					element={<Architecture cards={architectureCards} />}
+				/>
+				<Route
+					path="/project_fragments"
+					element={<Fragments cards={fragmentsCards} />}
+				/>
+				<Route path="/people" element={<People cards={peopleCards} />} />
 			</Routes>
-
-			{/* <Header />
-			<div className="content-wrapper">
-				<Routes>
-					<Route path="/" element={<Home cards={architectureCards} />} />
-					<Route path="/main" element={<Main articles={articles} />} />
-					<Route path="/carousel" element={<Carousel articles={articles} />} />
-				</Routes>
-			</div>
-			<Footer /> */}
 		</div>
 	);
 };

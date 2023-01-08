@@ -1,20 +1,21 @@
-interface IArticle {
-	id: number;
-	title: string;
-	cards: Array<IArticleCard>;
-}
-
-interface IArticleCard {
-	id: number;
-	title: string;
-	image?: string;
-}
-
 interface ITopic {
 	id: number;
 	title: string;
 	titleColor: string;
 	image?: string;
+	url: string;
 }
 
-export type { IArticle, IArticleCard, ITopic };
+interface ICardImage {
+	id: string;
+	title: string;
+	image: string;
+}
+
+interface ITopicCard {
+	id: string;
+	title: string;
+	images: ICardImage[];
+}
+
+export type { ITopic, ICardImage, ITopicCard };

@@ -1,16 +1,13 @@
 import { ITopic } from "../../interfaces";
 import { getImageStyle } from "../../utils";
 import styles from "./Landing.module.css";
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 interface LandingProps {
-	topics: Array<ITopic>;
+	topics: ITopic[];
 }
 
 export const Landing: React.FC<LandingProps> = ({ topics }) => {
-	useEffect(() => {});
-
 	const handleTileClick = () => {};
 
 	return (
@@ -18,7 +15,7 @@ export const Landing: React.FC<LandingProps> = ({ topics }) => {
 			<div className={styles.landingTilesWrapper}>
 				{topics.map((topic: ITopic) => {
 					return (
-						<Link to="/topic">
+						<Link to={topic.url}>
 							<div
 								key={topic.id}
 								className={styles.landingTile}

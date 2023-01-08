@@ -3,64 +3,25 @@
 @import url("./variables.css");
 @import url("./config.css");
 
+@font-face {
+	font-family: "BakbakOne";
+	src: local("BakbakOne"),
+		url("../../public/fonts/BakbakOne-Regular.ttf") format("truetype");
+	font-weight: bold;
+}
+
 .app {
 	position: relative;
 	max-width: var(--max-width-L);
 	min-height: 100vh;
 	margin: auto;
-	background-color: #eee;
+	background-color: var(--black-bg);
 	text-align: center;
 	overflow: hidden;
+	color: var(--light-stargate);
+	font-family: "BakbakOne";
 }
 
 .hidden {
 	display: none !important;
-}
-
-.navLinkActive {
-	background-color: var(--red-ryb);
-}
-
-/* CONTENT WRAPPER */
-.content-wrapper {
-	margin-top: var(--navbar-height);
-	margin-bottom: var(--footer-height);
-}
-
-.content-container {
-	margin-bottom: 10px;
-	padding: 10px;
-	background-color: #ddd;
-}
-
-/* CONCRETE BACKGROUND WALL */
-.background-wall {
-	position: absolute;
-	display: grid;
-	width: 100%;
-	top: 0;
-	left: 0;
-	grid-template-columns: repeat(5, 1fr);
-}
-
-.block {
-	aspect-ratio: 1;
-	background-size: cover;
-	background-position: center;
-	box-shadow: 1px 1px 6px rgb(0, 0, 0);
-	filter: drop-shadow(0 0 10px #333330) contrast(115%) sepia(0.08);
-}
-
-@media only screen and (max-width: 1200px) {
-	.content-wrapper {
-		margin-top: 0;
-		margin-left: var(--navbar-M-width);
-	}
-}
-
-@media only screen and (max-width: 768px) {
-	.content-wrapper {
-		margin-top: 0;
-		margin-left: var(--navbar-S-width);
-	}
 }

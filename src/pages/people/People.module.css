@@ -1,0 +1,10 @@
+.contentContainer {
+	position: relative;
+}
+
+.image {
+	background-size: cover;
+	background-position: center;
+	/* aspect-ratio: 16/9; */
+	aspect-ratio: 1;
+}
