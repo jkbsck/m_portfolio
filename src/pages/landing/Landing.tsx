@@ -26,7 +26,12 @@ export const Landing: React.FC<LandingProps> = ({ topics }) => {
 									style={getImageStyle(topic.image)}
 								>
 									<div className={styles.landingTileTitle}>
-										<span style={{ color: topic.titleColor }}>
+										<span
+											style={{
+												color: topic.titleColor,
+												fontSize: topic.fontSize,
+											}}
+										>
 											{topic.title}
 										</span>
 									</div>

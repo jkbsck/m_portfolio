@@ -1,0 +1,11 @@
+.cardWrapper ul {
+	display: flex;
+}
+
+.cardWrapper ul li {
+	flex: 1 1 0px;
+}
+
+.imageWrapper {
+	padding: 16px;
+}

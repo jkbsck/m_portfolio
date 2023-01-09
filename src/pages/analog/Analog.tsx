@@ -1,28 +1,20 @@
 import { ITopicCard } from "../../interfaces";
 import { getImageStyle } from "../../utils";
 import styles from "./Analog.module.css";
+import { TopicList } from "../../components/topic_list/TopicList";
 
 interface AnalogProps {
 	cards: Array<ITopicCard>;
+	title: string;
 }
-export const Analog: React.FC<AnalogProps> = ({ cards }) => {
+
+export const Analog: React.FC<AnalogProps> = ({ title, cards }) => {
 	return (
 		<section className={styles.contentContainer}>
 			<div>
-				<h1 className={styles.title}>Analog</h1>
+				<h1 className={styles.title}>{title}</h1>
 			</div>
-
-			{/* <h1 className={styles.title}>Analog</h1>
-			{cards.map((card) => {
-				return (
-					<article key={card.id}>
-						<div
-							className={styles.image}
-							style={getImageStyle(card.image)}
-						></div>
-					</article>
-				);
-			})} */}
+			<TopicList cards={cards} />
 		</section>
 	);
 };

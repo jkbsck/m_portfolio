@@ -1,24 +1,19 @@
 import { ITopicCard } from "../../interfaces";
 import { getImageStyle } from "../../utils";
 import styles from "./Architecture.module.css";
+import { TopicList } from "../../components/topic_list/TopicList";
 
 interface ArchitectureProps {
 	cards: Array<ITopicCard>;
+	title: string;
 }
-export const Architecture: React.FC<ArchitectureProps> = ({ cards }) => {
+export const Architecture: React.FC<ArchitectureProps> = ({ title, cards }) => {
 	return (
 		<section className={styles.contentContainer}>
-			<h1 className={styles.title}>Architecture</h1>
-			{cards.map((card) => {
-				return (
-					<article key={card.id}>
-						<div
-							className={styles.image}
-							style={getImageStyle(card.image)}
-						></div>
-					</article>
-				);
-			})}
+			<div>
+				<h1 className={styles.title}>{title}</h1>
+			</div>
+			<TopicList cards={cards} />
 		</section>
 	);
 };

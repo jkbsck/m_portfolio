@@ -1,24 +1,19 @@
 import { ITopicCard } from "../../interfaces";
 import { getImageStyle } from "../../utils";
 import styles from "./Fragments.module.css";
+import { TopicList } from "../../components/topic_list/TopicList";
 
 interface FragmentsProps {
 	cards: Array<ITopicCard>;
+	title: string;
 }
-export const Fragments: React.FC<FragmentsProps> = ({ cards }) => {
+export const Fragments: React.FC<FragmentsProps> = ({ title, cards }) => {
 	return (
 		<section className={styles.contentContainer}>
-			<h1 className={styles.title}>Project Fragments</h1>
-			{cards.map((card) => {
-				return (
-					<article key={card.id}>
-						<div
-							className={styles.image}
-							style={getImageStyle(card.image)}
-						></div>
-					</article>
-				);
-			})}
+			<div>
+				<h1 className={styles.title}>{title}</h1>
+			</div>
+			<TopicList cards={cards} />
 		</section>
 	);
 };

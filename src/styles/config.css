@@ -50,6 +50,14 @@ a {
 	color: black;
 }
 
+ul {
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
 @media only screen and (max-width: 1200px) {
 	/* HEADINGS */
 	h1 {
