@@ -13,7 +13,11 @@ export const TopicCard: React.FC<TopicCardProps> = ({ images }) => {
 					return (
 						<li key={image.id}>
 							<div className={styles.imageWrapper}>
-								<img src={image.image} alt={image.title} />
+								<img
+									src={image.image}
+									alt={image.title}
+									className={styles.image}
+								/>
 							</div>
 						</li>
 					);

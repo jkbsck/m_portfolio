@@ -17,26 +17,16 @@ const App = () => {
 		<div className="app">
 			<Routes>
 				<Route path="/" element={<Landing topics={topics} />} />
-				<Route
-					path="/analog"
-					element={<Analog title="Analog" cards={analogCards} />}
-				/>
+				<Route path="/analog" element={<Analog cards={analogCards} />} />
 				<Route
 					path="/architecture"
-					element={
-						<Architecture title="Architecture" cards={architectureCards} />
-					}
+					element={<Architecture cards={architectureCards} />}
 				/>
 				<Route
 					path="/project_fragments"
-					element={
-						<Fragments title="Project Fragments" cards={fragmentsCards} />
-					}
+					element={<Fragments cards={fragmentsCards} />}
 				/>
-				<Route
-					path="/people"
-					element={<People title="People" cards={peopleCards} />}
-				/>
+				<Route path="/people" element={<People cards={peopleCards} />} />
 			</Routes>
 		</div>
 	);

@@ -10,12 +10,15 @@
 	font-weight: bold;
 }
 
+body {
+	background-color: var(--black-bg);
+}
+
 .app {
 	position: relative;
 	max-width: var(--max-width-L);
 	min-height: 100vh;
 	margin: auto;
-	background-color: var(--black-bg);
 	text-align: center;
 	overflow: hidden;
 	color: var(--snow);

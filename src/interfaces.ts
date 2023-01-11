@@ -4,7 +4,7 @@ interface ITopic {
 	titleColor: string;
 	image?: string;
 	url: string;
-	fontSize: number;
+	fontSize: string;
 }
 
 interface ICardImage {

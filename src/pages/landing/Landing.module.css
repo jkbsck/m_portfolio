@@ -33,10 +33,36 @@
 
 .landingTileTitle {
 	color: var(--black-jet);
-	/* text-shadow: 3px 2px 2px; */
+	text-shadow: 2px 2px 4px #000000;
 }
 
-@media only screen and (max-width: 768px) {
+.fontLarge {
+	font-size: 96px;
+}
+
+.fontMedium {
+	font-size: 64px;
+}
+
+@media only screen and (max-width: 1096px) {
+	.landingTilesWrapper {
+		gap: 16px;
+	}
+
+	.landingTileImage {
+		height: 240px;
+	}
+
+	.fontLarge {
+		font-size: 80px;
+	}
+
+	.fontMedium {
+		font-size: 54px;
+	}
+}
+
+@media only screen and (max-width: 940px) {
 	.landingTilesWrapper {
 		gap: 12px;
 	}
@@ -45,12 +71,30 @@
 		height: 200px;
 	}
 
-	.landingTileTitle {
-		font-size: 24px;
+	.fontLarge {
+		font-size: 64px;
+	}
+
+	.fontMedium {
+		font-size: 42px;
 	}
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
+	.landingTileImage {
+		height: 180px;
+	}
+
+	.fontLarge {
+		font-size: 52px;
+	}
+
+	.fontMedium {
+		font-size: 34px;
+	}
+}
+
+@media only screen and (max-width: 700px) {
 	.landingTilesWrapper {
 		gap: 10px;
 	}
@@ -58,28 +102,83 @@
 	.landingTileImage {
 		height: 160px;
 	}
+}
 
-	.landingTileTitle {
-		font-size: 20px;
+@media only screen and (max-width: 620px) {
+	.landingTilesWrapper {
+		grid-template-columns: 1fr;
+		gap: 16px;
+	}
+
+	.landingTileImage {
+		height: 240px;
+	}
+
+	.fontLarge {
+		font-size: 80px;
+	}
+
+	.fontMedium {
+		font-size: 54px;
 	}
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 500px) {
+	.landingTileImage {
+		height: 200px;
+	}
+
+	.fontLarge {
+		font-size: 64px;
+	}
+
+	.fontMedium {
+		font-size: 42px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
 	.landingTilesWrapper {
 		gap: 8px;
 	}
 
 	.landingTileImage {
-		height: 140px;
+		height: 160px;
 	}
 
-	.landingTileTitle {
-		font-size: 16px;
+	.fontLarge {
+		font-size: 52px;
+	}
+
+	.fontMedium {
+		font-size: 34px;
 	}
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 316px) {
 	.landingTileImage {
 		height: 120px;
+	}
+
+	.fontLarge {
+		font-size: 48px;
+	}
+
+	.fontMedium {
+		font-size: 32px;
+	}
+}
+
+@media only screen and (max-width: 316px) {
+	.landingTileImage {
+		height: 100px;
+	}
+
+	.fontLarge {
+		font-size: 42px;
+	}
+
+	.fontMedium {
+		font-size: 28px;
 	}
 }

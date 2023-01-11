@@ -7,7 +7,7 @@ const topics: Array<ITopic> = [
 		titleColor: "var(--platinum)",
 		image: "./images/topics/people.jpg",
 		url: "/people",
-		fontSize: 96,
+		fontSize: "L",
 	},
 	{
 		id: 2,
@@ -15,7 +15,7 @@ const topics: Array<ITopic> = [
 		titleColor: "var(--platinum)",
 		image: "./images/topics/architecture.jpg",
 		url: "/architecture",
-		fontSize: 64,
+		fontSize: "M",
 	},
 	{
 		id: 3,
@@ -23,7 +23,7 @@ const topics: Array<ITopic> = [
 		titleColor: "var(--platinum)",
 		image: "./images/topics/analog.jpg",
 		url: "/analog",
-		fontSize: 96,
+		fontSize: "L",
 	},
 	{
 		id: 4,
@@ -31,7 +31,7 @@ const topics: Array<ITopic> = [
 		titleColor: "var(--platinum)",
 		image: "./images/topics/project_fragments.jpg",
 		url: "/project_fragments",
-		fontSize: 64,
+		fontSize: "M",
 	},
 ];
 

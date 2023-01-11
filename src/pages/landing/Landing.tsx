@@ -29,8 +29,12 @@ export const Landing: React.FC<LandingProps> = ({ topics }) => {
 										<span
 											style={{
 												color: topic.titleColor,
-												fontSize: topic.fontSize,
 											}}
+											className={
+												topic.fontSize === "L"
+													? styles.fontLarge
+													: styles.fontMedium
+											}
 										>
 											{topic.title}
 										</span>
