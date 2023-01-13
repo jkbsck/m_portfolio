@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "./static/css/main.83237081.css",
-    "main.js": "./static/js/main.540af3ba.js",
+    "main.css": "./static/css/main.4572d230.css",
+    "main.js": "./static/js/main.83f6e79b.js",
     "static/media/BakbakOne-Regular.ttf": "./static/media/BakbakOne-Regular.7dea4ba30d3041673c71.ttf",
     "index.html": "./index.html",
-    "main.83237081.css.map": "./static/css/main.83237081.css.map",
-    "main.540af3ba.js.map": "./static/js/main.540af3ba.js.map"
+    "main.4572d230.css.map": "./static/css/main.4572d230.css.map",
+    "main.83f6e79b.js.map": "./static/js/main.83f6e79b.js.map"
   },
   "entrypoints": [
-    "static/css/main.83237081.css",
-    "static/js/main.540af3ba.js"
+    "static/css/main.4572d230.css",
+    "static/js/main.83f6e79b.js"
   ]
 }
