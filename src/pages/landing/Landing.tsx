@@ -40,6 +40,7 @@ export const Landing: React.FC<LandingProps> = ({ topics }) => {
 										</span>
 									</div>
 								</div>
+								<div className={styles.darkenBox}></div>
 							</div>
 						</Link>
 					);

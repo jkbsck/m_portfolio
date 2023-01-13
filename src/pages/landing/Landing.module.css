@@ -14,6 +14,7 @@
 }
 
 .landingTile {
+	position: relative;
 	overflow: hidden;
 }
 
@@ -29,6 +30,18 @@
 	background-size: cover;
 	background-position: center;
 	aspect-ratio: 16/9;
+}
+
+.darkenBox {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	transition: all 0.2s linear;
+}
+
+.darkenBox:hover {
+	background-color: #ffffff0b;
 }
 
 .landingTileTitle {
