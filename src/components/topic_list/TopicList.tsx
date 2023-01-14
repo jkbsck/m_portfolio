@@ -1,13 +1,13 @@
 import { ITopicCard } from "../../interfaces";
-import { TopicCard } from "../topic_card/TopicCard";
+import TopicCard from "../topic_card/TopicCard";
 import styles from "./TopicList.module.css";
-import Button from "../../components/ui/Button";
+import Button from "../ui/button/Button";
 
 interface AnalogProps {
 	cards: Array<ITopicCard>;
 }
 
-export const TopicList: React.FC<AnalogProps> = ({ cards }) => {
+const TopicList: React.FC<AnalogProps> = ({ cards }) => {
 	return (
 		<div className={styles.listWrapper}>
 			<Button />
@@ -23,3 +23,5 @@ export const TopicList: React.FC<AnalogProps> = ({ cards }) => {
 		</div>
 	);
 };
+
+export default TopicList;

@@ -5,7 +5,7 @@ interface TopicCardProps {
 	images: ICardImage[];
 }
 
-export const TopicCard: React.FC<TopicCardProps> = ({ images }) => {
+const TopicCard: React.FC<TopicCardProps> = ({ images }) => {
 	return (
 		<div className={styles.cardWrapper}>
 			<ul>
@@ -26,3 +26,5 @@ export const TopicCard: React.FC<TopicCardProps> = ({ images }) => {
 		</div>
 	);
 };
+
+export default TopicCard;

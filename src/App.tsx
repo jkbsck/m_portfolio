@@ -1,8 +1,9 @@
-import { Landing } from "./pages/landing/Landing";
-import { Analog } from "./pages/analog/Analog";
-import { Architecture } from "./pages/architecture/Architecture";
-import { Fragments } from "./pages/fragments/Fragments";
-import { People } from "./pages/people/People";
+import Landing from "./pages/landing/Landing";
+import About from "./pages/about/About";
+import Analog from "./pages/analog/Analog";
+import Architecture from "./pages/architecture/Architecture";
+import Fragments from "./pages/fragments/Fragments";
+import People from "./pages/people/People";
 import {
 	analogCards,
 	architectureCards,
@@ -17,6 +18,7 @@ const App = () => {
 		<div className="app">
 			<Routes>
 				<Route path="/" element={<Landing topics={topics} />} />
+				<Route path="/about" element={<About />} />
 				<Route path="/analog" element={<Analog cards={analogCards} />} />
 				<Route
 					path="/architecture"

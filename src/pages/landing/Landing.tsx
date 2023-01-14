@@ -2,25 +2,20 @@ import { ITopic } from "../../interfaces";
 import { getImageStyle } from "../../utils";
 import styles from "./Landing.module.css";
 import { Link } from "react-router-dom";
+import AboutButton from "../../components/ui/about_button/AboutButton";
 
 interface LandingProps {
 	topics: ITopic[];
 }
 
-export const Landing: React.FC<LandingProps> = ({ topics }) => {
-	const handleTileClick = () => {};
-
+const Landing: React.FC<LandingProps> = ({ topics }) => {
 	return (
 		<div className={styles.landingWrapper}>
 			<div className={styles.landingTilesWrapper}>
 				{topics.map((topic: ITopic) => {
 					return (
-						<Link to={topic.url}>
-							<div
-								key={topic.id}
-								className={styles.landingTile}
-								onClick={handleTileClick}
-							>
+						<Link key={topic.id} to={topic.url}>
+							<div key={topic.id} className={styles.landingTile}>
 								<div
 									className={styles.landingTileImage}
 									style={getImageStyle(topic.image)}
@@ -46,6 +41,9 @@ export const Landing: React.FC<LandingProps> = ({ topics }) => {
 					);
 				})}
 			</div>
+			<AboutButton />
 		</div>
 	);
 };
+
+export default Landing;

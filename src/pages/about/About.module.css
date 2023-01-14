@@ -1,0 +1,42 @@
+.wrapper {
+	position: fixed;
+	width: 300px;
+	top: 10px;
+	right: 20px;
+	background-color: #ffffffe0;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 8px 12px;
+	color: var(--black-bg);
+	border-radius: 5px;
+}
+
+.aboutWrapper {
+	padding: 8px 0;
+	border-top: solid 1px var(--black-bg);
+}
+
+.title {
+	text-align: center;
+}
+
+.description {
+	text-align: start;
+}
+
+.contactWrapper {
+	padding-top: 8px;
+	border-top: solid 1px var(--black-bg);
+}
+
+.social {
+	display: flex;
+	justify-content: center;
+	padding: 8px;
+}
+
+.socialItem {
+	padding: 0 4px;
+	font-size: 20px;
+}
