@@ -1,15 +1,10 @@
 .wrapper {
-	position: fixed;
-	width: 300px;
-	top: 10px;
-	right: 20px;
-	background-color: #ffffffe0;
+	/* background-color: #ffffffe0; */
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	padding: 8px 12px;
-	color: var(--black-bg);
-	border-radius: 5px;
+	padding: 20px;
+	/* color: var(--black-bg); */
 }
 
 .aboutWrapper {
@@ -17,12 +12,32 @@
 	border-top: solid 1px var(--black-bg);
 }
 
+.imageWrapper {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding: 10px;
+}
+
+.image {
+	background-size: cover;
+	background-position: center;
+	width: 400px;
+	/* aspect-ratio: 16/9; */
+	aspect-ratio: 1;
+}
+
 .title {
 	text-align: center;
 }
 
 .description {
+	padding: 32px;
 	text-align: start;
+}
+
+.description p {
+	font-size: 16px;
 }
 
 .contactWrapper {
@@ -37,6 +52,17 @@
 }
 
 .socialItem {
-	padding: 0 4px;
+	padding: 0 8px;
 	font-size: 20px;
+	transition: all 0.2s ease-out;
+}
+
+.socialItem:hover {
+	transform: scale(1.05);
+}
+
+.socialItem a {
+	color: var(--snow);
+	font-size: 32px;
+	cursor: pointer;
 }

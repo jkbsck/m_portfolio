@@ -7,6 +7,15 @@ interface ITopic {
 	fontSize: string;
 }
 
+interface IAbout {
+	title: string;
+	description: string;
+	email: string;
+	image: string;
+	instagram: string;
+	facebook: string;
+}
+
 interface ICardImage {
 	id: string;
 	title: string;
@@ -19,4 +28,4 @@ interface ITopicCard {
 	images: ICardImage[];
 }
 
-export type { ITopic, ICardImage, ITopicCard };
+export type { ITopic, IAbout, ICardImage, ITopicCard };

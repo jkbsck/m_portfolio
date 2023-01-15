@@ -10,6 +10,7 @@ import {
 	peopleCards,
 	fragmentsCards,
 	topics,
+	about,
 } from "./data";
 import { Routes, Route } from "react-router-dom";
 
@@ -18,7 +19,7 @@ const App = () => {
 		<div className="app">
 			<Routes>
 				<Route path="/" element={<Landing topics={topics} />} />
-				<Route path="/about" element={<About />} />
+				<Route path="/about" element={<About about={about} />} />
 				<Route path="/analog" element={<Analog cards={analogCards} />} />
 				<Route
 					path="/architecture"

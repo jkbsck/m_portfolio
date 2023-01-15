@@ -1,4 +1,4 @@
-import { ITopicCard, ITopic } from "./interfaces";
+import { ITopicCard, ITopic, IAbout } from "./interfaces";
 
 const topics: Array<ITopic> = [
 	{
@@ -34,6 +34,16 @@ const topics: Array<ITopic> = [
 		fontSize: "M",
 	},
 ];
+
+const about: IAbout = {
+	title: "Margaretka Dobosova",
+	description:
+		"Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit cumque harum doloremque ut corporis omnis culpa voluptatibus sit, cupiditate nulla maiores numquam sed, et eos distinctio, eius iure. Voluptates, aut.",
+	image: "./images/about/about.jpg",
+	email: "margaretadobosova@gmail.com",
+	instagram: "https://instagram.com/alter.native.kid?igshid=YmMyMTA2M2Y=",
+	facebook: "https://www.facebook.com/alter.native.kiddo",
+};
 
 ///////////////////////////////////////
 // ANALOG CARDS
@@ -771,4 +781,11 @@ const fragmentsCards: Array<ITopicCard> = [
 	},
 ];
 
-export { topics, analogCards, architectureCards, peopleCards, fragmentsCards };
+export {
+	topics,
+	about,
+	analogCards,
+	architectureCards,
+	peopleCards,
+	fragmentsCards,
+};
