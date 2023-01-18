@@ -1,30 +1,62 @@
 .wrapper {
-	/* background-color: #ffffffe0; */
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	flex-direction: column;
+	min-height: 100vh;
 	padding: 20px;
-	/* color: var(--black-bg); */
+}
+
+.background {
+	position: fixed;
+	z-index: 0;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.imageBG {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 10%;
+	right: 10%;
+	background-size: cover;
+	background-position: center;
+}
+
+.imageLeft {
+	position: absolute;
+	left: 5%;
+	width: 25%;
+	aspect-ratio: 1;
+	background-size: cover;
+	background-position: center;
+}
+
+.imageRight {
+	position: absolute;
+	right: 5%;
+	width: 25%;
+	aspect-ratio: 1;
+	background-size: cover;
+	background-position: center;
+}
+
+.contentWrapper {
+	z-index: 10;
+	width: 40%;
+	text-shadow: 2px 2px 3px var(--black-bg);
+	background: #33333350;
+	border-radius: 10px;
 }
 
 .aboutWrapper {
 	padding: 8px 0;
-	border-top: solid 1px var(--black-bg);
-}
-
-.imageWrapper {
-	display: flex;
-	justify-content: center;
-	width: 100%;
-	padding: 10px;
-}
-
-.image {
-	background-size: cover;
-	background-position: center;
-	width: 400px;
-	/* aspect-ratio: 16/9; */
-	aspect-ratio: 1;
 }
 
 .title {
@@ -33,16 +65,14 @@
 
 .description {
 	padding: 32px;
-	text-align: start;
 }
 
 .description p {
-	font-size: 16px;
+	font-size: 18px;
 }
 
 .contactWrapper {
 	padding-top: 8px;
-	border-top: solid 1px var(--black-bg);
 }
 
 .social {
@@ -65,4 +95,63 @@
 	color: var(--snow);
 	font-size: 32px;
 	cursor: pointer;
+}
+
+@media only screen and (max-width: 1096px) {
+	.imageBG {
+		right: auto;
+		left: auto;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.imageLeft {
+		width: 30%;
+	}
+
+	.imageRight {
+		width: 30%;
+	}
+
+	.contentWrapper {
+		width: 30%;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.imageLeft {
+		left: auto;
+		right: 65%;
+		width: 240px;
+	}
+
+	.imageRight {
+		right: auto;
+		left: 65%;
+		width: 240px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.imageLeft {
+		left: auto;
+		width: 200px;
+	}
+
+	.imageRight {
+		right: auto;
+		width: 200px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.imageLeft {
+		left: auto;
+		width: 180px;
+	}
+
+	.imageRight {
+		right: auto;
+		width: 180px;
+	}
 }

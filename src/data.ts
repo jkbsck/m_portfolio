@@ -40,6 +40,9 @@ const about: IAbout = {
 	description:
 		"Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit cumque harum doloremque ut corporis omnis culpa voluptatibus sit, cupiditate nulla maiores numquam sed, et eos distinctio, eius iure. Voluptates, aut.",
 	image: "./images/about/about.jpg",
+	imageLeft: "./images/about/about_left.jpg",
+	imageRight: "./images/about/about_right.jpg",
+	imageBG: "./images/about/about_bg.jpg",
 	email: "margaretadobosova@gmail.com",
 	instagram: "https://instagram.com/alter.native.kid?igshid=YmMyMTA2M2Y=",
 	facebook: "https://www.facebook.com/alter.native.kiddo",

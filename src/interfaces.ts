@@ -12,6 +12,9 @@ interface IAbout {
 	description: string;
 	email: string;
 	image: string;
+	imageLeft: string;
+	imageRight: string;
+	imageBG: string;
 	instagram: string;
 	facebook: string;
 }
