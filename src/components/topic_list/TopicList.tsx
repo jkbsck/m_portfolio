@@ -1,7 +1,8 @@
 import { ITopicCard } from "../../interfaces";
 import TopicCard from "../topic_card/TopicCard";
 import styles from "./TopicList.module.css";
-import Button from "../ui/button/Button";
+import HomeButton from "../ui/home_button/HomeButton";
+import { SlArrowLeft } from "react-icons/sl";
 import { useEffect, useState } from "react";
 
 interface AnalogProps {
@@ -12,9 +13,11 @@ const TopicList: React.FC<AnalogProps> = ({ cards }) => {
 	const [allCards, setAllCards] = useState<Array<ITopicCard>>([]);
 
 	useEffect(() => {
-		const initImages = cards.slice(0, 1);
+		const initImages: Array<ITopicCard> = cards.slice(0, 1);
 		setAllCards(initImages);
 	}, [cards]);
+
+	useEffect(() => {}, []);
 
 	const addNextCard = () => {
 		const newCards = cards.slice(0, allCards.length + 1);
@@ -23,7 +26,7 @@ const TopicList: React.FC<AnalogProps> = ({ cards }) => {
 
 	return (
 		<div className={styles.listWrapper}>
-			<Button />
+			<HomeButton />
 			<ul>
 				{allCards.map((card) => {
 					return (

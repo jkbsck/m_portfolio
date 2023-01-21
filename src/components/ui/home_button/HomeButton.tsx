@@ -1,5 +1,5 @@
 import { SlArrowLeft } from "react-icons/sl";
-import styles from "./Button.module.css";
+import styles from "./HomeButton.module.css";
 import { useNavigate } from "react-router-dom";
 
 const Button = () => {

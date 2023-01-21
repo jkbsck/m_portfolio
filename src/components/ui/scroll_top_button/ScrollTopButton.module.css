@@ -1,0 +1,27 @@
+.buttonWrapper {
+	position: fixed;
+	bottom: -20px;
+	height: 50px;
+	width: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	background-color: var(--black-transparent);
+	box-shadow: 0px 0px 3px var(--snow-transparent);
+	color: var(--platinum);
+	font-size: 24px;
+	z-index: 10;
+	transition: all 0.2s ease-out;
+	cursor: pointer;
+}
+
+.buttonWrapper:hover {
+	transform: translateY(-5px);
+	box-shadow: 0px 0px 4px var(--snow-transparent);
+}
+
+.gap {
+	height: 15px;
+}

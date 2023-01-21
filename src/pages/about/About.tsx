@@ -1,6 +1,7 @@
 import styles from "./About.module.css";
 import { SlSocialInstagram, SlSocialFacebook } from "react-icons/sl";
-import Button from "../../components/ui/button/Button";
+import HomeButton from "../../components/ui/home_button/HomeButton";
+import { SlArrowLeft } from "react-icons/sl";
 import { IAbout } from "../../interfaces";
 import React from "react";
 
@@ -62,7 +63,7 @@ const About: React.FC<AboutProps> = ({ about }) => {
 					</div>
 				</div>
 			</div>
-			<Button />
+			<HomeButton />
 		</div>
 	);
 };

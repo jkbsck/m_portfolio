@@ -29,3 +29,11 @@
 .gap {
 	height: 15px;
 }
+
+@media only screen and (max-width: 600px) {
+	.buttonWrapper {
+		font-size: 20px;
+		width: 108px;
+		height: 54px;
+	}
+}

@@ -54,6 +54,7 @@
 	aspect-ratio: 1;
 	background-size: cover;
 	background-position: center;
+	box-shadow: 0 0 5px var(--black-bg);
 }
 
 .imageRight {
@@ -63,13 +64,15 @@
 	aspect-ratio: 1;
 	background-size: cover;
 	background-position: center;
+	border: solid 1px black;
+	box-shadow: 0 0 5px var(--snow-transparent);
 }
 
 .contentWrapper {
 	z-index: 10;
 	width: 40%;
 	text-shadow: 2px 2px 3px var(--black-bg);
-	background: #33333350;
+	background: #33333370;
 	border-radius: 10px;
 }
 
