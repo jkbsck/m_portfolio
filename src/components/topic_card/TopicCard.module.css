@@ -8,10 +8,13 @@
 
 .imageWrapper {
 	padding: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .image {
-	width: 100%;
+	/* width: 100%; */
 }
 
 @media only screen and (max-width: 940px) {

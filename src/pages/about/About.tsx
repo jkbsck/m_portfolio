@@ -18,8 +18,13 @@ const About: React.FC<AboutProps> = ({ about }) => {
 			<div className={styles.background}>
 				<div
 					className={styles.imageBG}
-					style={getWrapperBackground(about.imageBG)}
-				></div>
+					// style={getWrapperBackground(about.imageBG)}
+				>
+					<picture>
+						<source srcSet="./images/about/about_bg.avif" />
+						<img src="./images/about/about_bg.jpg" alt="svsgvsefvs" />
+					</picture>
+				</div>
 				<div
 					className={styles.imageLeft}
 					style={getWrapperBackground(about.imageLeft)}
