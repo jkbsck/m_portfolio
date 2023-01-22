@@ -1,12 +1,12 @@
 // import Landing from "./pages/landing/Landing";
 import Loading from "./components/loading/Loading";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 // import About from "./pages/about/About";
 // import Analog from "./pages/analog/Analog";
 // import Architecture from "./pages/architecture/Architecture";
 // import Fragments from "./pages/fragments/Fragments";
 // import People from "./pages/people/People";
+// import NotFound from "./pages/not_found/NotFound";
 import {
 	analogCards,
 	architectureCards,
@@ -24,6 +24,7 @@ const Analog = lazy(() => import("./pages/analog/Analog"));
 const Architecture = lazy(() => import("./pages/architecture/Architecture"));
 const Fragments = lazy(() => import("./pages/fragments/Fragments"));
 const People = lazy(() => import("./pages/people/People"));
+const NotFound = lazy(() => import("./pages/not_found/NotFound"));
 
 const App = () => {
 	return (
@@ -42,6 +43,7 @@ const App = () => {
 						element={<Fragments cards={fragmentsCards} />}
 					/>
 					<Route path="/people" element={<People cards={peopleCards} />} />
+					<Route path="*" element={<NotFound />} />
 				</Routes>
 			</Suspense>
 		</div>

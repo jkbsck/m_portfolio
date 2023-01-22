@@ -1,7 +1,6 @@
 import styles from "./About.module.css";
 import { SlSocialInstagram, SlSocialFacebook } from "react-icons/sl";
 import HomeButton from "../../components/ui/home_button/HomeButton";
-import { SlArrowLeft } from "react-icons/sl";
 import { IAbout } from "../../interfaces";
 import React from "react";
 
@@ -22,8 +21,9 @@ const About: React.FC<AboutProps> = ({ about }) => {
 					// style={getWrapperBackground(about.imageBG)}
 				>
 					<picture>
-						<source srcSet="./images/about/about_bg.avif" />
-						<img src="./images/about/about_bg.jpg" alt="svsgvsefvs" />
+						{/* <source srcSet="./images/about/about_bg.avif" type="image/avif" /> */}
+						<source srcSet="./images/about/about_bg.jpg" type="image/jpg" />
+						<img src="./images/about/about_bg.jpg" alt="background" />
 					</picture>
 				</div>
 				<div

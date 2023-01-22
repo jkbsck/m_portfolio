@@ -2,7 +2,6 @@ import { ITopicCard } from "../../interfaces";
 import TopicCard from "../topic_card/TopicCard";
 import styles from "./TopicList.module.css";
 import HomeButton from "../ui/home_button/HomeButton";
-import { SlArrowLeft } from "react-icons/sl";
 import { useEffect, useState } from "react";
 
 interface AnalogProps {
